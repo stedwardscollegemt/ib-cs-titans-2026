@@ -8,15 +8,18 @@ public class BuildingBlocks {
     public static void main(String[] args) {
 
         // 2.5
-        // TODO: Declare and assign a constant for NO_OF_WEEK_DAYS
+        // Declare and assign a constant for NO_OF_WEEK_DAYS
+        int NO_OF_WEEK_DAYS = 7;
+        System.out.println(NO_OF_WEEK_DAYS);
 
         // 2.2, 2.3, 2.4, 2.6
         // The following data types are also referred to as "primitive data types"
 
-        // TODO: Declaring a variable of data type integer and assigning a value
-        
-        // TODO: Display "Apple Unit Price: $<appleUnitPrice>"
-        
+        // Declaring a variable of data type integer and assigning a value
+        int appleUnitPriceCents = 50;
+        // Display "Apple Unit Price: $<appleUnitPrice>"
+        System.out.println("Apple Unit Price:");
+
         // TODO: Declaring a variable of data type int for applyQty and assign 10 as a value
         
 

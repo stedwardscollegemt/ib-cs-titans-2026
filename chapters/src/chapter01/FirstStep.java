@@ -19,7 +19,11 @@ public class FirstStep {
         System.out.println("Let this program tell you about myself.");
         System.out.println("\n");
         
-        // TODO: Write output statements to display information about yourself
-        
+        // Write output statements to display information about yourself
+        // We are displaying our name, age, sex and a list of hobbies 
+        System.out.println("Name:       Erika Camilleri");
+        System.out.println("Age :       33 years");
+        System.out.println("Sex :       F");
+        System.out.println("Hobbies:    Trekking, Classical Music, Agile, Machine Learning");
     }
 }
