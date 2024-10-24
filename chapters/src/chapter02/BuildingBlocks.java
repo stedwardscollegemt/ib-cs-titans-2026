@@ -18,12 +18,14 @@ public class BuildingBlocks {
         // Declaring a variable of data type integer and assigning a value
         int appleUnitPriceCents = 50;
         // Display "Apple Unit Price: $<appleUnitPrice>"
-        System.out.println("Apple Unit Price:");
+        System.out.println("Apple Unit Price: " + appleUnitPriceCents);
 
-        // TODO: Declaring a variable of data type int for applyQty and assign 10 as a value
-        
+        // Declaring a variable of data type int for appleQty and assign 10 as a value
+        int appleQty = 10;
 
         // TODO: Display "Qty: 10"
+
+
         
         // TODO: Declare a variable named amountDue and assign it to appleUnitPrice * appleQty
         
