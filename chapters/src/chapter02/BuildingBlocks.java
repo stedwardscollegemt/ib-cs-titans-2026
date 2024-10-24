@@ -22,35 +22,43 @@ public class BuildingBlocks {
 
         // Declaring a variable of data type int for appleQty and assign 10 as a value
         int appleQty = 10;
+        // Display "Qty: 10"
+        System.out.println("Qty: " + appleQty);
 
-        // TODO: Display "Qty: 10"
-
-
-        
-        // TODO: Declare a variable named amountDue and assign it to appleUnitPrice * appleQty
-        
-        // TODO: Display "Amount due: $<amountDue>"
-
-        System.out.println("------------------------------------------------------------------------------------------");
-
-        // TODO: Declaring a variable of data type float and assigning a value
-        
-        // TODO: Increase the temperature by 5.7 degrees celcius
-        
-        // TODO: Display "Temperature: <temperature> degrees celcius"
+        // Declare a variable named amountDue and assign it to appleUnitPrice * appleQty
+        int amountDue = appleQty * appleUnitPriceCents;
+        // Display "Amount due: $<amountDue>"
+        System.out.println("Amount due: " + amountDue);
         
         System.out.println("------------------------------------------------------------------------------------------");
 
-        // TODO: Declaring a variable called balance of data type double and assigning a value
-
-        // TODO: Decrease the balance by 4.95 dollars
+        // Declaring a variable of data type float to store temperature and assigning a value
+        float temperature = 10.2f;
         
-        // TODO: Display "Account Balance: $<balance>"
+        // Increase the temperature by 5.7 degrees celcius
+        // Note that we do not need to retype 'float' again, that we do only once
+        // We can use variables as many times as we like in our programs
+        temperature = 5.7f + temperature;
+        
+        // Display "Temperature: <temperature> degrees celcius"
+        System.out.println("Temperature: " + temperature + " degrees celcius.");
 
         System.out.println("------------------------------------------------------------------------------------------");
 
-        // TODO: Declaring a variable of data type char and assigning a value
+        // Declaring a variable called balance of data type double and assigning a value
+        double balance = 20.50;
+        // Decrease the balance by 4.95 dollars
+        balance = balance - 4.95;
+        // Display "Account Balance: $<balance>"
+        System.out.println("Account Balance: $" + balance);
 
-        // TODO: Declaring a variable of data type boolean and assigning a value
+        System.out.println("------------------------------------------------------------------------------------------");
+
+        // Declaring a variable of data type char and assigning a value
+        char myFavouriteLetter = 'E';
+
+        // Declaring a variable of data type boolean and assigning a value
+        boolean isHungry = true;
+        boolean isCoding = true;
     }
 }
