@@ -30,6 +30,9 @@ public class IsItEven {
         if (remainder == 0) {
             // Code to run when remainder is 0
             System.out.println("Number is EVEN!");
+        } else {
+            // Code to run when remainder is NOT 0
+            System.out.println("Number is ODD!");
         }
 
         
