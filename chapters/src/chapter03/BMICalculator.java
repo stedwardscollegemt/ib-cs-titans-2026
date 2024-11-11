@@ -6,6 +6,8 @@ import java.util.Scanner;
  * A full-blown example of a BMI calculator created by past students.
  */
 public class BMICalculator {
+
+    // This is the starting point of my program.
     public static void main(String[] args) {
 
         // Display a title for your BMI Calculator
