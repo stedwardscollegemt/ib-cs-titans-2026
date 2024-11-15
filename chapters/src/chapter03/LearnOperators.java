@@ -30,5 +30,16 @@ public class LearnOperators {
         boolean isXSmallerY = (x < y);
         System.out.println("Is X Smaller than Y (<): " + isXSmallerY);
 
+        // Defining mod which is short for modulus (%)
+        double z = (x % y);
+        System.out.println("X MOD Y (%): " + z);
+
+        // Defining div which is short for integer division (/)
+        int w = (x / y);
+        System.out.println("X DIV Y (/): " + w);
+
+        // Defining smaller than (!=)
+        boolean isXNotEqualY = (x != y);
+        System.out.println("Is X Not Equal to Y (<): " + isXNotEqualY);
     } 
 }
