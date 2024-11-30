@@ -46,8 +46,8 @@ public class NineLives {
                 boolean isLetterGuessed = secretWord.contains(guessLetter + "");
     
                 // Check whether the guess is correct, 
-                //       If it is then update hint
-                //       Else update lives
+                //       if it is then update hint
+                //       else update lives
                 if (isLetterGuessed) {
                     // update hint - this is complicated so I might need to tackle this separately
                     // we will get some guidance from the teacher probably
