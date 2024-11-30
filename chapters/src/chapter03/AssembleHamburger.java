@@ -34,7 +34,7 @@ public class AssembleHamburger {
 
             // Ask the user...
             System.out.println("Would you add lettuce? (y/n)");
-            // TODO: Based on response add LT
+            // Based on response add LT
             // Let's get a response first
             response = input.next().charAt(0);
             if (response == 'y') {
@@ -42,14 +42,14 @@ public class AssembleHamburger {
             }
 
             System.out.println("Would you add tomatoe? (y/n)");
-            // TODO: Based on response add TM
+            // Based on response add TM
             response = input.next().charAt(0);
             if (response == 'y') {
                 burgerOnPlate = burgerOnPlate + "TM, ";
             }
 
             System.out.println("Would you go for a double? (y/n)");
-           // TODO: Based on response add DB
+           // Based on response add DP
            response = input.next().charAt(0);
             if (response == 'y') {
                 burgerOnPlate = burgerOnPlate + "DP, ";
@@ -61,14 +61,14 @@ public class AssembleHamburger {
             burgerOnPlate = burgerOnPlate + "CH, ";
 
             System.out.println("Would you add pickle? (y/n)");
-            // TODO: Based on response add PK
+            // Based on response add PK
             response = input.next().charAt(0);
             if (response == 'y') {
                 burgerOnPlate = burgerOnPlate + "PK, ";
             }
 
             System.out.println("Would you add onion? (y/n)");
-            // TODO: Based on response add ON
+            // Based on response add ON
             response = input.next().charAt(0);
             if (response == 'y') {
                 burgerOnPlate = burgerOnPlate + "ON, ";
