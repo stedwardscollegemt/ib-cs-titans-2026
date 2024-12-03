@@ -53,6 +53,21 @@ public class NineLives {
                 if (isLetterGuessed) {
                     // update hint - this is complicated so I might need to tackle this separately
                     // we will get some guidance from the teacher probably
+                    String newHint = "";
+                    for (int s = 0; s < secretWord.length(); s++) {
+                        char nextHintChar = hint.charAt(s);
+                        if (nextHintChar == '_') {
+                            char nextSecretWordChar = secretWord.charAt(s);
+                            if (nextSecretWordChar == guessLetter) {
+                                newHint = newHint + nextSecretWordChar;
+                            } else {
+                                newHint = newHint + "_";
+                            }
+                        }
+                    }
+                    hint = newHint;
+                    System.out.println(hint);
+                    System.out.println(""); // just an empty new line to make my UI look neater
                 } else {
                     System.out.println("Nope! The letter is not there...");
                     lives = lives - 1;
