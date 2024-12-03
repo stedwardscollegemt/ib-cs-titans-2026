@@ -63,6 +63,8 @@ public class NineLives {
                             } else {
                                 newHint = newHint + "_";
                             }
+                        } else {
+                            newHint = newHint + nextHintChar;
                         }
                     }
                     hint = newHint;
