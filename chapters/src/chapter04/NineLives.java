@@ -30,9 +30,11 @@ public class NineLives {
             System.out.println("Lives: " + lives);
             System.out.println(""); // just an empty new line to make my UI look neater
             System.out.print("Hint: ");
+            String hint = "";
             for (int letter = 0; letter < secretWord.length(); letter++) {
-                System.out.print("_ ");
+                hint = hint + "_";
             }
+            System.out.println(hint);
             System.out.println(""); // just an empty new line to make my UI look neater
 
             while (lives > 0) {
