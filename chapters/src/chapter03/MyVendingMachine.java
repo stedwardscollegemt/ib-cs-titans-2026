@@ -29,10 +29,28 @@ public class MyVendingMachine {
     double amount = input.nextDouble();
 
     // Declare a variable for change
+    double change = 0.00;
 
     switch(number) {
       case 1:
         // TODO: Case 1
+        System.out.println("How many do you want?");
+        int qty = input.nextInt();
+        double amountDue = 7.30 * qty;
+
+        System.out.println("Please pay me " + amountDue + ": ");
+        double money = input.nextDouble();
+
+        if (money >= amountDue) {
+          System.out.println("Ok, " + qty + " of my cat's furballs coming right up...");
+          if (money > amountDue) {
+            change = money - amountDue;
+            System.out.println("Your change: " + change);
+          }
+        } else {
+          System.out.println("You did not pay enough, but guess what, I will keep the money anyway!");
+        }
+
         break;
       case 2:
         // TODO: Case 2
