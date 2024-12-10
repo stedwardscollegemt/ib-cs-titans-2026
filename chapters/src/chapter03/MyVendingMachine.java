@@ -9,18 +9,26 @@ public class MyVendingMachine {
 
   public static void main(String[] args) {
 
-    // TODO: Really cool ASCII art title
+    // Really cool ASCII art title
     // https://ascii.today/
+    System.out.println("__                    __                          __  ___");
+    System.out.println("|  |_.----.-----.---.-|  |_.--.--.----.-----.-----|  .'  _|");
+    System.out.println("|   _|   _|  -__|  _  |   _|  |  |   _|__ --|  -__|  |   _|");
+    System.out.println("|____|__| |_____|___._|____|_____|__| |_____|_____|__|__|");
 
-    // TODO: Format your bizarre menu nicely, with a price list
+    // Format your bizarre menu nicely, with a price list
+    System.out.println("[1] My cat's furball ----------- $7.30");
+    System.out.println("[2] Already chewed gum --------- $0.30");
     
     Scanner input = new Scanner(System.in);
     System.out.println("Please choose an item.");
     int number = input.nextInt();
 
-    // TODO: User must agree to make the purchase by confirming the right amount
+    // User must agree to make the purchase by confirming the right amount
+    System.out.println("You chose " + number + " please confirm amount: ");
+    double amount = input.nextDouble();
 
-    // TODO: Declare a variable for change
+    // Declare a variable for change
 
     switch(number) {
       case 1:
