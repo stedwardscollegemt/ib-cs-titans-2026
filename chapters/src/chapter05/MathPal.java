@@ -8,12 +8,15 @@ import helpers.Keyboard;
  */
 public class MathPal {
     public static void main(String[] args) {
-        // TODO: On board the user with a welcoming message 
+        // On board the user with a welcoming message 
+        System.out.println("***Welcome to MatPal***");
+        System.out.println("***********************");
         
-        // TODO: Declare a boolean variable isPlay and set it to true
+        // Declare a boolean variable isPlay and set it to true
+        boolean isPlay = true;
 
-        // TODO: Use isPlay in the while loop
-        while(true) {
+        // Use isPlay in the while loop
+        while(isPlay) {
             System.out.println("1. Counting");
             System.out.println("2. Add");
             System.out.println("3. Subtract");
@@ -46,7 +49,11 @@ public class MathPal {
                 System.out.println(n1 + " - " + n2 + " = " + output);
                 explainer(n1, n2, '-');
             } else {
-
+                // Counting Code
+                // Use the method signature to invoke
+                // and in place of the parameters pass in your
+                // arguments (variables with concrete values)
+                counting(n1, n2);
             }
         }
     }
@@ -85,15 +92,15 @@ public class MathPal {
                 System.out.println("Start counting from n1: " + n1);
                 System.out.println("Keep counting for n2 (" + n2 + ") times.");
                 System.out.println("Example...");
-                for (int count = n1; count <= (count + n2); count++) {
-                System.out.println(count);
+                for (int count = n1; count <= n2; count++) {
+                    System.out.println(count);
                 }
                 break;
             case '-':
                 System.out.println("Start counting from n1: " + n1);
                 System.out.println("Keep counting for n2 (" + n2 + ") times but backwards.");
                 System.out.println("Example...");
-                for (int count = n1; count >= (count - n2); count--) {
+                for (int count = n1; count >= n2; count--) {
                     System.out.println(count);
                 }
                 break;
@@ -109,4 +116,50 @@ public class MathPal {
                 System.out.println("ERR: I cannot recognise this operator: " + operator);
         }
     }
+
+    /**
+     * 
+     * @param n1 e.g., 2; 10
+     * @param n2 e.g., 3; 3;
+     * // Example output 1
+     * We are going to count from 2 up to 3
+     * 2... 3.
+     * 
+     * // Example output 2
+     * We are going to count backwards from 10 down to 3
+     * 10... 9... 8... 7... 6... 5... 4... 3.
+     */
+
+    public static void counting(int n1, int n2) {
+        // Check if we counting up or down.
+        if (n1 < n2) {
+            // Counting up...
+            for (int i = n1; i <= n2; i++) {
+                System.out.print(i);
+                if (n1 == n2) {
+                    System.out.print(".");
+                } else {
+                    System.out.print("...");
+                    // TODO: Pause the program in Java
+                }
+            }
+        } else if (n1 > n2) {
+            // Counting down...
+            for (int i = n2; i >= n1; i--) {
+                System.out.print(i);
+                if (n1 == n2) {
+                    System.out.print(".");
+                } else {
+                    System.out.print("...");
+                    // TODO: Pause the program in Java
+                }
+            }
+        } else {
+           // They are equal!
+           System.out.println("We can only count between two different numbers! Please try again."); 
+        }
+        System.out.println("");
+        System.out.println("");
+    }
+
 }
