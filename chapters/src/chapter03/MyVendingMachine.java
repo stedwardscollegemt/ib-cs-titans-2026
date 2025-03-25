@@ -54,6 +54,22 @@ public class MyVendingMachine {
         break;
       case 2:
         // TODO: Case 2
+        System.out.println("How many do you want?");
+        int qty2 = input.nextInt();
+        double amountDue2 = 7.30 * qty2;
+
+        System.out.println("Please pay me " + amountDue2 + ": ");
+        double money2 = input.nextDouble();
+
+        if (money2 >= amountDue2) {
+          System.out.println("Ok, " + qty2 + " of my cat's furballs coming right up...");
+          if (money2 > amountDue2) {
+            change = money2 - amountDue2;
+            System.out.println("Your change: " + change);
+          }
+        } else {
+          System.out.println("You did not pay enough, but guess what, I will keep the money anyway!");
+        }
         break;
       case 3:
         // TODO: Case 3

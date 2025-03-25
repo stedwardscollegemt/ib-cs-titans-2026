@@ -13,7 +13,8 @@ public class CarEngineerUtilityTool {
         boolean exitProgram = false;
 
         while(!exitProgram) {
-            // TODO: call printMenu()
+            // call printMenu()
+            printMenu();
 
             // We are using the Keyboard class instead of the Scanner object
             // because its methods are easier to remember.
@@ -53,6 +54,12 @@ public class CarEngineerUtilityTool {
     //       2. Engine Power Calculator
     //       3. Brake Distance Calculator
     //       4. Exit
+    public static void printMenu() {
+        System.out.println("1. Fuel Efficiency Calculator");
+        System.out.println("2. Engine Power Calculator");
+        System.out.println("3. Brake Distance Calculator");
+        System.out.println("4. Exit");
+    }
 
     // Here is an example of a method with parameters and a return value
     private static double calculateFuelEfficiency(double distance, double fuel) {
