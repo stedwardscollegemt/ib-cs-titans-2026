@@ -1,9 +1,10 @@
 package chapter02;
 
 import java.util.Random;
-import java.util.Scanner;
+//import java.util.Scanner;
 
-public class Roller {
+public class Dicer 
+{
 
 public static int rollDice()
 {
@@ -12,7 +13,8 @@ public static int rollDice()
     return roll;
 }
 
-public static void main(String[] args) {
+public static void main(String[] args) 
+{
     //Display welcome message 
     System.out.println("Calling a Math Function...");
 
@@ -25,7 +27,7 @@ public static void main(String[] args) {
 
     int sum = 0;
 
-    while (sum <= 10 && sum != 6) 
+    while (sum < 10) // && sum != 6) 
     
     {
     // Here is where you call your newly created method
@@ -37,12 +39,10 @@ public static void main(String[] args) {
     
     //tries = tries + 1;
 
-    System.out.println(roll1 + " + " + roll2 + " = " + sum + ", Try number: "  + tries);
+    System.out.println(roll1 + " + " + roll2 + " = " + sum + ", Roll number: "  + tries);
 
     tries++;
     }
 }
-
-
 
 }
