@@ -7,7 +7,7 @@ import java.util.Scanner;
  * So that the program checks for your height
  */
 // @Developer: Lenka Year 12 2024
-public class RollerCoaster {
+public class Roller {
     
     public static void main(String[] args) {
         double height;
