@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CarFactory",
+            "request": "launch",
+            "mainClass": "exam_revision.CarFactory",
+            "projectName": "ib-cs-titans-2026_8bfebe0a"
+        },
+        {
+            "type": "java",
             "name": "MathPal",
             "request": "launch",
             "mainClass": "chapter05.MathPal",
