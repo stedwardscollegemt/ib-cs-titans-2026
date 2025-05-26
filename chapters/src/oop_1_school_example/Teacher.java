@@ -8,6 +8,8 @@ public class Teacher {
     
     String name;
 
+    Subject subject;
+
 
 
 
@@ -15,5 +17,9 @@ public class Teacher {
 
 
     /* ----------------  BEHAVIOUR -------------------------- */
+    // Java methods
+    public void teachSubject() {
+        // code to teach subject
+    }
     
 }

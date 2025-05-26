@@ -4,7 +4,10 @@ package exam_revision;
 // D.3.1 Program Development, Define: class
 // D.3.5 Program Development, Construct code related to object-oriented fundamentals
 // Grouping of DATA (variables) with BEHAVIOUR (methods)
-public class Car {
+
+// Car is-a-type-of CarModel e.g., Car is-a Nissan Juke
+// Car inherits from CarModel data like title and any behaviour
+public class Car extends CarModel{
 
     // Data | State (member variables/attributes/properties)
     // Describe what the car is made up of
@@ -16,6 +19,8 @@ public class Car {
 
     // Behaviour (methods)
     // Describe what the car can do
+    // D.3.2 Method Signature - The header of a method containing the name, set of parameters, (return type)
+    // e.x. drive(int miles)
     public void drive(int miles) {
         // code to drive...
         mileage = mileage + miles;
