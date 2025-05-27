@@ -17,13 +17,25 @@ public class Car extends CarModel{
 
     boolean isSecondHand; // a Yes/No flag which requires little validation since it is so simple
 
+    Engine engine;
+
+    // Constructor - a form of instantiating classes
+    public Car(Engine engine) {
+        // this is a special keyword in Java to refer to a particular state
+        // so here you are saying update the engine of THIS car and set it to
+        // the instance of the engine that is being injected in the constructor
+        this.engine = engine;
+
+    }
     // Behaviour (methods)
     // Describe what the car can do
     // D.3.2 Method Signature - The header of a method containing the name, set of parameters, (return type)
     // e.x. drive(int miles)
     public void drive(int miles) {
-        // code to drive...
-        mileage = mileage + miles;
+        if (CarHealthDiagnosticService.checkCapacityValue(engine.capacity)) {
+            engine.start();
+            // code to drive...
+            mileage = mileage + miles;
+        }
     }
-
 }
