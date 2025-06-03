@@ -1,4 +1,4 @@
-package exam_revision;
+package exam_revision.CarEntity;
 
 /**
  * D.1.6 - Relationships; Car "HAS-A" Engine
@@ -6,7 +6,7 @@ package exam_revision;
 public class Engine {
     
     // Data
-    float capacity;
+    float capacity; // D.3.2 By default, without modifiers, features are treated as public
 
     int numberOfCylinders;
 
