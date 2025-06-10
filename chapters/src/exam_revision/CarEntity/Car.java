@@ -21,7 +21,7 @@ public class Car extends CarModel{
 
     private Engine engine; // private is a modifier to HIDE information
 
-    private String bodyColor;
+    private String uniqueBodyColor; // we are a unique car shop with unique colors
 
     // Constructor - a form of instantiating classes
     public Car(Engine engine) { // engineInput, engineInjected
@@ -31,14 +31,20 @@ public class Car extends CarModel{
         // in Lenka's words, this is THE INSTANCE that is being created through the
         // constructor
         this.engine = engine;
-        this.setTitle(bodyColor);
+        this.setTitle(uniqueBodyColor);
     }
 
     // Give write access in a controlled way so that our class is STABLE, SAFE and SECURE to use.
     // D.3.2 Mutator methods - these are methods that give special write access to hidden properties
     //                         enabling instances to change their state.
-    public void setBodyColour(String bodyColorInput) {
-        this.bodyColor = bodyColorInput;
+    public void setBodyColor(String bodyColorInput) {
+        // error handling in the future
+        this.uniqueBodyColor = bodyColorInput;
+    }
+
+    // Give read access
+    public String getBodyColor() {
+        return this.uniqueBodyColor;
     }
 
     public void setIsSecondHand(boolean isSecondHandInput) {
