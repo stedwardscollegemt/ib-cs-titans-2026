@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MultiplicationQuiz",
+            "request": "launch",
+            "mainClass": "oop_2_quiz_example.basics_revision.MultiplicationQuiz",
+            "projectName": "ib-cs-titans-2026_8bfebe0a"
+        },
+        {
+            "type": "java",
+            "name": "SimpleProgram",
+            "request": "launch",
+            "mainClass": "chapter01.SimpleProgram",
+            "projectName": "ib-cs-titans-2026_8bfebe0a"
+        },
+        {
+            "type": "java",
             "name": "CarFactory",
             "request": "launch",
             "mainClass": "exam_revision.CarFactory",
