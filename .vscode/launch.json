@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Dicer",
+            "request": "launch",
+            "mainClass": "chapter02.Dicer",
+            "projectName": "ib-cs-titans-2026_8bfebe0a"
+        },
+        {
+            "type": "java",
+            "name": "UnicodeChineseTest",
+            "request": "launch",
+            "mainClass": "UnicodeChineseTest",
+            "projectName": "ib-cs-titans-2026_8bfebe0a"
+        },
+        {
+            "type": "java",
             "name": "MultQuizUI",
             "request": "launch",
             "mainClass": "oop_2_quiz_example.oop_refactor.MultQuizUI",

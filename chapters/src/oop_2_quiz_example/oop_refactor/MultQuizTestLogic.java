@@ -5,16 +5,44 @@ public class MultQuizTestLogic {
     /**
      * --- STATE: Declare Member Variables
      */
-    String[] questions;
+    private String[] questions;
     
-    int[] answers;
+    private int[] answers;
 
-    int score;
+    private int score;
+
+    /**
+     * Constructor
+     * @param numberOfQuestions
+     */
+    public MultQuizTestLogic(int numberOfQuestions, int mulTable) {
+        score = 0;
+        questions = new String[numberOfQuestions];
+        answers = new int[numberOfQuestions];
+        initTest(mulTable);
+    }
+
+    /**
+     * --- Mutators and Accessors -------------------
+     */
+    // to read the score
+    public int getScore() {
+        return score;
+    }
+
+    public String[] getQuestions() {
+        return questions;
+    }
+
+    public int[] getAnswers() {
+        return answers;
+    }
 
     /**
      * --- BEHAVIOUR: Methods
      */
     public void initTest(int mulTable) {
+        System.out.println("Here I am being tested");
         for(int i = 0; i < questions.length; i++) {
             // generate the question e.g., 1 X 5 =
             answers[i] = (i + 1) * mulTable;

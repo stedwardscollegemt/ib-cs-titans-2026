@@ -10,7 +10,7 @@ public class UnitTestMultQuizTestLogic {
 
     public static void initTestUnit() {
         // set up
-        mock = new MultQuizTestLogic();
+        mock = new MultQuizTestLogic(3, 5);
 
         // expected results
         String[] questions = {"1 X 5=", "2 X 5=", "3 X 5"};
@@ -22,7 +22,7 @@ public class UnitTestMultQuizTestLogic {
         // assertions - has it worked (pass/fail)
         boolean pass = true;
         for (int i = 0; i < questions.length; i++) {
-            if (questions[i] != mock.questions[i] || answers[i] != mock.answers[i]) {
+            if (questions[i] != mock.getQuestions()[i] || answers[i] != mock.getAnswers()[i]) {
                 pass = false;
             }
         }
